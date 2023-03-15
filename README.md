@@ -1,2 +1,1 @@
-# js-concepts-in-depth
-Javascript internals and core concepts in depth
+This repositiry explains all JavaScript concepts in depth with exampls code.
