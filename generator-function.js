@@ -188,3 +188,18 @@ for ( const jk of take(naturalNumbers(), 5) ) {
     console.log("jk", jk);
 }
 
+// Smaple coroutine
+
+function* mouseEvent () {
+    while ( true ) {
+        const event1 = yield;
+        if ( event1 === "mousedown" ) {
+            while ( true ) {
+                const event2 = yield;
+                if ( event2 === "mousemove" ) moveBox(event2);
+                else if ( event2 === "mouseup" ) break;
+            }
+        }
+    }
+}
+
