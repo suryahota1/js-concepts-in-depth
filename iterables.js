@@ -102,3 +102,4 @@ const zipped = zip(['a', 'b', 'c'], ['d', 'e', 'f', 'g']);
 for (const x of zipped) {
     console.log(x);
 }
+
